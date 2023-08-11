@@ -1,0 +1,47 @@
+body{
+    background: linear-gradient(to top right,rgba(120,102,153,.9) ,rgba(98,99,100,.1) ,rgba(123,142,153,.8));
+    margin: 0%;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.wheelouter{
+    margin: 10px;
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    border:20px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+}
+.rim1,.rim2,.rim3,.rim4,.rim5,.rim6,.rim7,.rim8{
+    height: 4px;
+    width: 98px;
+    border-radius: 20px;
+    background-color: black;
+    position: absolute;
+    transform: rotate(var(--d));
+}
+.wheelouter{
+    animation: rotate 4s infinite none;
+}
+@keyframes rotate{
+    0%{
+        background-color: green;
+        translate:-100px;
+        transform: rotate(0deg);
+    }
+    100%{
+        background-color: blue;
+        translate:100px;
+        transform: rotate(360deg);
+    }
+}
+
+
+
